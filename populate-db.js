@@ -8,10 +8,10 @@ import db from './db';
 async function main() {
     await db.connect();
 
-   await User.deleteMany();
-   await Job.deleteMany();
-   await Worker.deleteMany();
-   await Payment.deleteMany();
+    await User.deleteMany();
+    await Job.deleteMany();
+    await Worker.deleteMany();
+    await Payment.deleteMany();
 
     const users = await User.insertMany([
         { firstName: 'Elvira', lastName: 'Romanova' },

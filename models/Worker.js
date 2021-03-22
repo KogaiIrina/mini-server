@@ -15,6 +15,8 @@ const workerSchema = new Schema({
       ref: 'User',
       required: true
   }
+},  {
+  timestamps: true
 });
 
 export default mongoose.model('Worker', workerSchema);
